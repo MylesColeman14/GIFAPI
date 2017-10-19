@@ -7,9 +7,20 @@
 </head>
 
 <body>
-  <button data-animal="cat">meow</button>
-  <button data-animal="dog">woof</button>
-  <button data-animal="bird">chirp</button>
+  
+  <div id="buttons-view">
+    <button class="animal-button" data-animal="cat">meow</button>
+    <button class="animal-button" data-animal="dog">woof</button>
+    <button class="animal-button" data-animal="bird">chirp</button>
+    <button class="animal-button" data-animal="red panda">chirp</button>
+  </div>
+  <form id="animal-form">
+      <label for="animal-input">Add an animal</label>
+      <input type="text" id="animal-input"><br>
+
+      
+      <input id="add-animal" type="submit" value="Add an animal">
+    </form>
   <div id="gifs-appear-here">
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
