@@ -1,7 +1,5 @@
 var animals = []
 
-
-
 function changeState(){
   event.preventDefault();
   var state = $(this).attr("data-state");
@@ -43,7 +41,7 @@ function displayGif(){
     console.log(response);
     results= response.data;
        
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < animal.length; i++) {
       var animalDiv= $("<div>");
       var p = $("<p>").text("Rating: "+ results[i].rating);
       var animalImage = $("<img>");
